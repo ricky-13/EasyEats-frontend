@@ -1,0 +1,3 @@
+can add functionality to check if a user with an email already exists
+
+forgot password functionality can be added 
