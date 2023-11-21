@@ -1,3 +1,3 @@
-can add functionality to check if a user with an email already exists
+can add functionality to check if a user with an email already exists redirect to login page saying that user with this email exists
 
 forgot password functionality can be added 
