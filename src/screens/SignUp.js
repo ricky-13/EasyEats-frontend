@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SignUp() {
+  const nav = useNavigate();
   // nice way of taking all inputs instead of making different variable for each
   const [credentials, setCredentials] = useState({
     name: "",
@@ -35,6 +36,8 @@ export default function SignUp() {
     if (!json.success) {
       alert("Enter valid credentials");
     }
+
+    nav("/login");
   };
 
   // everytime the value of the input fields change, setCredentials is triggered and the name is set to the value
