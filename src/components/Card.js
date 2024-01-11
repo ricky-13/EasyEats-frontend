@@ -4,6 +4,8 @@ export default function Card(props) {
   let options = props.options;
   let priceOption = Object.keys(options);
 
+  const handleAddToCart = () => {};
+
   return (
     <div>
       <div className="card mt-3" style={{ width: "18rem", maxHeight: "360px" }}>
@@ -40,6 +42,13 @@ export default function Card(props) {
             <div className="d-inline h-100 fs-4">Total Price</div>
           </div>
         </div>
+        <hr></hr>
+        <button
+          className="btn btn-success justify-center ms-2"
+          onClick={handleAddToCart}
+        >
+          Add to Cart
+        </button>
       </div>
     </div>
   );
