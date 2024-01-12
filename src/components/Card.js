@@ -13,7 +13,7 @@ export default function Card(props) {
           className="card-img-top"
           src={props.imgSrc}
           alt="alt text"
-          style={{ height: "200px", objectFit: "fill" }}
+          style={{ height: "150px", objectFit: "fill" }}
         />
         <div className="card-body">
           <h5 className="card-title">{props.foodName}</h5>
@@ -41,14 +41,14 @@ export default function Card(props) {
 
             <div className="d-inline h-100 fs-4">Total Price</div>
           </div>
+          <hr></hr>
+          <button
+            className="btn btn-success justify-center ms-2"
+            onClick={handleAddToCart}
+          >
+            Add to Cart
+          </button>
         </div>
-        <hr></hr>
-        <button
-          className="btn btn-success justify-center ms-2"
-          onClick={handleAddToCart}
-        >
-          Add to Cart
-        </button>
       </div>
     </div>
   );
