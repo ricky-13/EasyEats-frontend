@@ -17,6 +17,13 @@ const reducer = (state, action) => {
           img: action.img,
         },
       ];
+    case "REMOVE":
+      let newArr = [...state];
+      newArr.splice(action.index, 1);
+      return newArr;
+    case "DROP":
+      let emptyArray = [];
+      return emptyArray;
     default:
       console.log("Error in Reducer");
   }
